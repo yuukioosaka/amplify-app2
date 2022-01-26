@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "amplifyapp2",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\lang\\ws3\\amplify-app2\\amplify\\backend\\api\\amplifyapp2\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

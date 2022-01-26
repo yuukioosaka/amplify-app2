@@ -1,0 +1,67 @@
+# this is an auto generated file. This will be overwritten
+query GetTodo($id: ID!) {
+  getTodo(id: $id) {
+    id
+    name
+    description
+    createdAt
+    updatedAt
+  }
+}
+query ListTodos(
+  $filter: ModelTodoFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      description
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetQuestion($id: ID!) {
+  getQuestion(id: $id) {
+    id
+    name
+    ans1
+    ans2
+    ans3
+    ans4
+    ans5
+    ans6
+    ans7
+    ans8
+    ans9
+    createdAt
+    updatedAt
+  }
+}
+query ListQuestions(
+  $filter: ModelQuestionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listQuestions(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      ans1
+      ans2
+      ans3
+      ans4
+      ans5
+      ans6
+      ans7
+      ans8
+      ans9
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
